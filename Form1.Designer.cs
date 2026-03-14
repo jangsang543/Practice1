@@ -34,6 +34,9 @@
             pictureBox1 = new PictureBox();
             emailLabel = new Label();
             phoneLabel = new Label();
+            imageButton = new Button();
+            githubButton = new Button();
+            bgButton = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -93,11 +96,50 @@
             phoneLabel.Text = "연락처: 010 - 1234 - 5678";
             phoneLabel.Click += label3_Click;
             // 
+            // imageButton
+            // 
+            imageButton.BackColor = SystemColors.ActiveCaption;
+            imageButton.FlatStyle = FlatStyle.Popup;
+            imageButton.Font = new Font("휴먼편지체", 26F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            imageButton.ForeColor = SystemColors.ActiveCaptionText;
+            imageButton.Location = new Point(61, 588);
+            imageButton.Name = "imageButton";
+            imageButton.Size = new Size(370, 126);
+            imageButton.TabIndex = 8;
+            imageButton.Text = "사진 바꾸기";
+            imageButton.UseVisualStyleBackColor = false;
+            // 
+            // githubButton
+            // 
+            githubButton.BackColor = Color.FromArgb(255, 192, 128);
+            githubButton.Font = new Font("휴먼편지체", 20F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            githubButton.Location = new Point(862, 127);
+            githubButton.Name = "githubButton";
+            githubButton.Size = new Size(171, 154);
+            githubButton.TabIndex = 9;
+            githubButton.Text = "GitHub";
+            githubButton.UseVisualStyleBackColor = false;
+            // 
+            // bgButton
+            // 
+            bgButton.BackColor = Color.Green;
+            bgButton.Font = new Font("휴먼편지체", 28F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            bgButton.ForeColor = Color.White;
+            bgButton.Location = new Point(554, 546);
+            bgButton.Name = "bgButton";
+            bgButton.Size = new Size(546, 168);
+            bgButton.TabIndex = 10;
+            bgButton.Text = "배경색 랜덤 변경";
+            bgButton.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1234, 723);
+            Controls.Add(bgButton);
+            Controls.Add(githubButton);
+            Controls.Add(imageButton);
             Controls.Add(phoneLabel);
             Controls.Add(emailLabel);
             Controls.Add(pictureBox1);
@@ -116,5 +158,8 @@
         private PictureBox pictureBox1;
         private Label emailLabel;
         private Label phoneLabel;
+        private Button imageButton;
+        private Button githubButton;
+        private Button bgButton;
     }
 }
