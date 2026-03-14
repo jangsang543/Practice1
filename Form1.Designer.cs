@@ -71,6 +71,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
+            pictureBox1.MouseEnter += pictureBox1_MouseEnter;
             // 
             // emailLabel
             // 
@@ -108,6 +109,7 @@
             imageButton.TabIndex = 8;
             imageButton.Text = "사진 바꾸기";
             imageButton.UseVisualStyleBackColor = false;
+            imageButton.Click += imageButton_Click;
             // 
             // githubButton
             // 
@@ -119,6 +121,7 @@
             githubButton.TabIndex = 9;
             githubButton.Text = "GitHub";
             githubButton.UseVisualStyleBackColor = false;
+            githubButton.Click += githubButton_Click;
             // 
             // bgButton
             // 
@@ -131,6 +134,7 @@
             bgButton.TabIndex = 10;
             bgButton.Text = "배경색 랜덤 변경";
             bgButton.UseVisualStyleBackColor = false;
+            bgButton.Click += bgButton_Click;
             // 
             // Form1
             // 
